@@ -13,7 +13,8 @@ import com.perfumeria.perfume_shop_api.repository.IUserRepository;
 @Service
 public class UserService implements IUserService {
 
-    private final PasswordEncoder passwordEncoder;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private IUserRepository userRepository;

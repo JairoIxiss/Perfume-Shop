@@ -45,7 +45,7 @@ public class UserController {
     }
 
     @GetMapping("/traer-nombre")
-    public User traerPorNombre(@RequestParam String nombre) {
+    public List<User> traerPorNombre(@RequestParam String nombre) {
         return userService.buscarNombre(nombre);
     }
     
