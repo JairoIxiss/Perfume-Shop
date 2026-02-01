@@ -3,6 +3,7 @@ package com.perfumeria.perfume_shop_api.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.perfumeria.perfume_shop_api.model.User;
@@ -12,11 +13,24 @@ import com.perfumeria.perfume_shop_api.repository.IUserRepository;
 @Service
 public class UserService implements IUserService {
 
+    private final PasswordEncoder passwordEncoder;
+
     @Autowired
     private IUserRepository userRepository;
 
+    UserService(PasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
+
     @Override
     public void guardarUsuario(User user) {
+
+        if(userRepository.existsByEmail(user.getEmail())){
+            throw new RuntimeException("Ya existe un usuario con este correo:" + user.getEmail());
+        }
+
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         userRepository.save(user);
     }
 
