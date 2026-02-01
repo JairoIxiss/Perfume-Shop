@@ -14,7 +14,9 @@ import com.perfumeria.perfume_shop_api.model.enums.Rol;
 public interface IUserRepository extends JpaRepository <User, Long>{
     Optional<User> findByIdUser(Long idUser);
     
-    Optional<User> findByNombreContaining(String nombre);
+    List<User> findByNombreContaining(String nombre);
+
+    Optional<User> findByEmail(String email);
     
     boolean existsByNombre(String nombre);
 
