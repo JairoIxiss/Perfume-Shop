@@ -26,8 +26,8 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User buscarNombre(String nombre){
-        return userRepository.findByNombreContaining(nombre).orElse(null);
+    public List<User> buscarNombre(String nombre){
+        return userRepository.findByNombreContaining(nombre);
     }
 
     @Override
@@ -65,5 +65,10 @@ public class UserService implements IUserService {
     @Override
     public List<User> traerUsuariosPorRol(Rol rol) {
         return userRepository.findByRol(rol);
+    }
+
+    @Override
+    public User buscarPorEmail(String email) {
+        return userRepository.findByEmail(email).orElse(null);
     }
 }

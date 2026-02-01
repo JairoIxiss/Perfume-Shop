@@ -10,7 +10,7 @@ public interface IUserService {
 
     public User buscarPorID(Long idUser);
 
-    public User buscarNombre(String nombre);
+    public List<User> buscarNombre(String nombre);
 
     public List<User> traerUsuarios();
 
@@ -23,4 +23,6 @@ public interface IUserService {
     public boolean existsByEmail(String email);
 
     public List<User> traerUsuariosPorRol(Rol rol);
+
+    public User buscarPorEmail(String email); 
 }
