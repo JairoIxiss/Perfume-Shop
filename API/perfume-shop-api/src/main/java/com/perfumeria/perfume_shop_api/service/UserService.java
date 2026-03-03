@@ -24,7 +24,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public void guardarUsuario(User user) {
+    public User guardarUsuario(User user) {
 
         if(userRepository.existsByEmail(user.getEmail())){
             throw new RuntimeException("Ya existe un usuario con este correo:" + user.getEmail());
@@ -32,7 +32,7 @@ public class UserService implements IUserService {
 
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
-        userRepository.save(user);
+        return userRepository.save(user);
     }
 
     @Override

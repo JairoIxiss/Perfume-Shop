@@ -6,7 +6,7 @@ import com.perfumeria.perfume_shop_api.model.User;
 import com.perfumeria.perfume_shop_api.model.enums.Rol;
 
 public interface IUserService {
-    public void guardarUsuario(User user);
+    public User guardarUsuario(User user);
 
     public User buscarPorID(Long idUser);
 
