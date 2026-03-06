@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-gray-900 text-white shadow-lg">
+        <nav className="w-3/4 mx-auto mt-2 sticky bg-mist-700/50 text-white shadow-lg rounded-full backdrop-blur-md border border-white/20">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <Link to="/" className="text-2xl font-bold hover:text-gray-300">
@@ -58,9 +58,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-red-600 text-4xl font-bold p-8">
-          PRUEBA DE TAILWIND
-        </div>
         </nav>
     )
 };
