@@ -58,6 +58,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <div className="text-red-600 text-4xl font-bold p-8">
+          PRUEBA DE TAILWIND
+        </div>
         </nav>
     )
 };
