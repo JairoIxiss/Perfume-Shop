@@ -1,20 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Catalogo from './pages/Catalogo';
+import Login from './pages/Login';
+import Register from './pages/Registro';
+import Colors from './components/Colors';
+import AboutUs from './components/AboutUs';
+import Carousel from './components/Carousel';
 import './index.css'
 
 function App() {
   return (
-<Router>
-      <div className="min-h-screen bg-gray-100">
+    <Router>
+      <div className="relative  min-h-screen">
+        <div className="absolute inset-0 -z-30 bg-indigo-50"></div>
+        <Colors />
         <Navbar />
+        <Carousel />
+        <AboutUs />
         <Routes>
-          <Route path="/" element={
-            <div className="container mx-auto px-4 py-8">
-              <h1 className="text-4xl font-bold text-center">
-                ¡Bienvenido a Perfume Shop!
-              </h1>
-            </div>
-          } />
+          <Route path="/" element={<Catalogo />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>
