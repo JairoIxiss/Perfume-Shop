@@ -6,7 +6,7 @@ const AboutUs = () => {
         <div className="min-h-[90vh] flex items-center justify-center border-amber-600" >
             <div className=" w-[85%] h-[70vh] relative bg-black/20 backdrop-blur-lg rounded-lg shadow-lg">
                 <div className="titulo border-red-600 flex justify-center ">
-                    <h2 className="py-4 leading-relaxed font-pacifico text-5xl px-5 bg-gradient-to-r from-indigo-500  to-amber-500 bg-[length:150%_100%] bg-clip-text text-transparent">Perfume Shop</h2>
+                    <h2 className="py-4 leading-relaxed font-pacifico text-5xl px-5 bg-linear-to-r from-indigo-500  to-amber-500 bg-size-[150%_100%] bg-clip-text text-transparent">Perfume Shop</h2>
                 </div>
                 <div className="descrip-imagen grid grid-cols-[60%_40%] place-items-center border-red-500 w-full">
                     <div className="descripcion p-4">

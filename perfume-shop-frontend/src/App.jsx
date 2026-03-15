@@ -13,11 +13,18 @@ function App() {
     <Router>
       <div className="relative  min-h-screen">
         <div className="absolute inset-0 -z-30 bg-indigo-50"></div>
-        <Colors />
-        <Navbar />
-        <Carousel />
-        <AboutUs />
         <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Colors />
+                <Navbar />
+                <Carousel />
+                <AboutUs />
+              </>
+            }
+            />
           <Route path="/" element={<Catalogo />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

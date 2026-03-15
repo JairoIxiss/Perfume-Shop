@@ -36,8 +36,57 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4">
-            <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8">
+        <div className="min-h-screen -z-10 flex items-center justify-center bg-orange-100 py-12 px-4">
+            <div className="absolute inset-0 z-0 overflow-hidden">
+                <div className="
+        absolute
+        top-[-200px]
+        left-[-200px]
+        w-[500px]
+        h-[500px]
+        bg-purple-600/20
+        rounded-full
+        blur-[100px]
+        animate-[floatSlow_18s_ease-in-out_infinite]
+      " />
+                <div className="
+        absolute
+        top-[100px]
+        right-[-200px]
+        w-[500px]
+        h-[500px]
+        bg-blue-600
+        opacity-30
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_25s_ease-in-out_infinite]
+      " />
+                <div className="
+        absolute
+        bottom-[-200px]
+        left-[30%]
+        w-[500px]
+        h-[500px]
+        bg-fuchsia-500
+        opacity-30
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_22s_ease-in-out_infinite]
+      " />
+                <div className="
+        absolute
+        bottom-[-200px]
+        left-[70%]
+        w-[500px]
+        h-[500px]
+        bg-emerald-300/50
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_22s_ease-in-out_infinite]
+      " />
+
+            </div>
+            <div className="max-w-md w-full z-10 bg-white/50 rounded-lg shadow-md p-8">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
                     Iniciar Sesión
                 </h2>
