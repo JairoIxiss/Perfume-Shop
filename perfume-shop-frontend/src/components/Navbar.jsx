@@ -13,8 +13,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="contenedor mx-50 relative z-10 backdrop-blur-md bg-amber-300/25 border-b border-white/20 rounded-3xl shadow-xl">
-            <div className="contenedor-objetos mx-auto px-4  border-red-500">
+        <nav className="w-full z-10 backdrop-blur-md bg-amber-300/25 border-b border-white/20 rounded-3xl shadow-xl">
+            <div className="contenedor-objetos max-w-7xl mx-auto px-4  border-red-500">
                 <div className="flex justify-between items-center h-16  border-blue-500">
                     <Link to="/" className="font-pacifico text-2xl text-yellow-900 hover:text-gray-300">
                         Perfume Shop
@@ -24,7 +24,7 @@ const Navbar = () => {
                         <input type="text" placeholder="Buscar perfume..." className="bg-transparent outline-none w-full " />
                     </div>
                     <div className="flex items-center space-x-6  border-green-500">
-                        <Link to="/" className=" text-yellow-900 hover:text-gray-300 transition">
+                        <Link to="/catalogo" className=" text-yellow-900 hover:text-white hover:shadow-2xl transition">
                             Catálogo
                         </Link>
                         {isAdmin && (
@@ -48,13 +48,13 @@ const Navbar = () => {
                             <div className="space-x-2">
                                 <Link
                                     to="/login"
-                                    className="text-yellow-900 hover:bg-blue-700 px-4 py-2 rounded transition"
+                                    className="text-yellow-900 hover:bg-white px-4 py-2 rounded transition"
                                 >
                                     Iniciar Sesión
                                 </Link>
                                 <Link
                                     to="/register"
-                                    className="text-yellow-900 hover:bg-green-700 px-4 py-2 rounded transition"
+                                    className="text-yellow-900 hover:bg-white px-4 py-2 rounded transition"
                                 >
                                     Registro
                                 </Link>

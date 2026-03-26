@@ -11,8 +11,10 @@ export const perfumeService = {
         return response.data;
     },
 
-    getByGenero: async () => {
-        const response = await api.get('/perfume/traer/por-genero/${genero}');
+    getByGenero: async (genero) => {
+        const response = await api.get(`/perfume/traer/por-genero`, {
+            params: {genero}
+        });
         return response.data;
     },
 

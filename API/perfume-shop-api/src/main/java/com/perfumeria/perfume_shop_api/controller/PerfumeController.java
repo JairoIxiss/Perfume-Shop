@@ -55,23 +55,23 @@ public class PerfumeController {
         return "Perfume eliminado correctamente";
     }
 
-    @GetMapping("/traer/por-nombre/")
+    @GetMapping("/traer/por-nombre")
     public List<Perfume> buscarPorNombre(@RequestParam String nombre){
         return perfumeService.buscarPorNombre(nombre);
     }
 
-    @GetMapping("/traer/por-categoria/")
+    @GetMapping("/traer/por-categoria")
     public List<Perfume> buscarPorCategoria(@RequestParam String Categoria){
         return perfumeService.buscarPorCategoria(Categoria);
     }
 
-    @GetMapping("/traer/por-genero/")
+    @GetMapping("/traer/por-genero")
     public List<Perfume> buscarPorGenero(@RequestParam Genero genero){
         return perfumeService.buscarPorGenero(genero);
         
     }
 
-    @GetMapping("/traer/por-concentracion/")
+    @GetMapping("/traer/por-concentracion")
     public List<Perfume> buscarPorConcentracion(@RequestParam Concentracion concentracion){
         return perfumeService.buscarPorConcentracion(concentracion);
     }

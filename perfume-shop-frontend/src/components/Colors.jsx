@@ -43,7 +43,47 @@ const Colors = () => {
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 
+      <div className="
+        absolute
+        top-[-200px]
+        left-[30%]
+        w-[500px]
+        h-[500px]
+        bg-green-400
+        opacity-30
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_22s_ease-in-out_infinite]
+      " />
+
+      <div className="
+        absolute
+        bottom-[-100px]
+        left-[30%]
+        w-[200px]
+        h-[500px]
+        bg-green-400
+        opacity-30
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_22s_ease-in-out_infinite]
+      " />
+
+      <div className="
+        absolute
+        bottom-[-100px]
+        left-[80%]
+        w-[200px]
+        h-[500px]
+        bg-pink-400
+        opacity-50
+        rounded-full
+        blur-[140px]
+        animate-[floatSlow_22s_ease-in-out_infinite]
+      " />
+
         </div>
+        
     );
 };
 

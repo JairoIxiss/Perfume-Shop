@@ -6,6 +6,10 @@ import Register from './pages/Registro';
 import Colors from './components/Colors';
 import AboutUs from './components/AboutUs';
 import Carousel from './components/Carousel';
+import TopSellers from './components/TopSellers';
+import Lanzamientos from './components/Lanzamientos';
+import Beneficios from './components/Beneficios';
+import Footer from './components/Footer';
 import './index.css'
 
 function App() {
@@ -21,11 +25,15 @@ function App() {
                 <Colors />
                 <Navbar />
                 <Carousel />
+                <TopSellers/>
+                <Lanzamientos />
                 <AboutUs />
+                <Beneficios />
+                <Footer/>
               </>
             }
             />
-          <Route path="/" element={<Catalogo />} />
+          <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>

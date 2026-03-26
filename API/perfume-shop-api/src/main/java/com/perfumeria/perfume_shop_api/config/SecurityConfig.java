@@ -42,15 +42,9 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/auth/**").permitAll()
                 .requestMatchers("/perfume/traer").permitAll()
-                .requestMatchers("/perfume/traer/{id}").permitAll()
-                .requestMatchers("/perfume/traer/por-nombre/").permitAll()
-                .requestMatchers("/perfume/traer/por-genero/").permitAll()
-                .requestMatchers("/perfume/traer/por-categoria/").permitAll()
-                .requestMatchers("/perfume/traer/por-concentracion/").permitAll()
-                .requestMatchers("/perfume/traer/por-marca/{idMarca}").permitAll()
-                .requestMatchers("/perfume/traer/por-concentracion/").permitAll()
-                .requestMatchers("/perfume/traer/por-stock/").permitAll()
-                .requestMatchers("/perfume/traer/por-volumen/").permitAll()
+                .requestMatchers("/perfume/traer/**").permitAll()
+                .requestMatchers("/perfume/traer/por-genero").permitAll()
+
                 .requestMatchers("/perfume/existencia/").permitAll()
                 .requestMatchers("/marca/todas").permitAll()
                 .requestMatchers("/marca/{id}").permitAll()
