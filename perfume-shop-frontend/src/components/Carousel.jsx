@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AboutUs from "./AboutUs";
 import FrescosCard from "./FrescosCard";
 import CitricosCard from "./CitricosCard";
@@ -17,6 +17,14 @@ const Carousel = () => {
         <DulcesCard />
     ];
 
+   //* useEffect(() => {
+        //const interval = setInterval(() => {
+       //     setIndex((prev) => (prev + 1) % slides.length);
+       // }, );
+
+       // return () => clearInterval(interval);
+   // }, []);
+
     const next = () => {
         setIndex((prev) => (prev + 1) % slides.length);
     };
@@ -26,29 +34,52 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full overflow-hidden">
-            <button
-                onClick={prev}
-                className="absolute left-5 top-1/2 -translate-y-1/2 z-20 bg-black/20 backdrop-blur-md text-gray-800 p-3 rounded-3xl hover:bg-white/40 shadow-lg"
-            >
-                <IconChevronLeft className="w-7 h-7" />
-            </button>
-            <button
-                onClick={next}
-                className="absolute right-5 top-1/2 -translate-y-1/2 z-20 bg-black/20 backdrop-blur-md text-gray-800 p-3 rounded-3xl hover:bg-white/40 shadow-lg"
-            >
-                <IconChevronRight className="w-7 h-7" />
-            </button>
+        <div className="relative w-11/12 mx-auto overflow-hidden rounded-2xl shadow-lg bg-amber-100 mt-15 mb-15">
+
             <div
-                className="flex transition-transform duration-500"
+                className="flex transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${index * 100}%)` }}
             >
                 {slides.map((slide, i) => (
-                    <div key={i} className="min-w-full flex justify-center">
+                    <div key={i} className="min-w-full flex justify-center p-6">
                         {slide}
                     </div>
                 ))}
             </div>
+
+            <div className="absolute bottom-4 left-4 flex items-center gap-4">
+
+                <div className="flex gap-2">
+                    <button
+                        onClick={prev}
+                        className="bg-amber-900/50 text-white p-2 rounded-full hover:bg-amber-900/70"
+                    >
+                        <IconChevronLeft />
+                    </button>
+
+                    <button
+                        onClick={next}
+                        className="bg-amber-900/50 text-white p-2 rounded-full hover:bg-amber-900/70"
+                    >
+                        <IconChevronRight />
+                    </button>
+                </div>
+
+                <div className="flex gap-2">
+                    {slides.map((_, i) => (
+                        <div
+                            key={i}
+                            onClick={() => setIndex(i)}
+                            className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
+                                index === i
+                                    ? "bg-amber-900 scale-125"
+                                    : "bg-amber-900/40"
+                            }`}
+                        />
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 }

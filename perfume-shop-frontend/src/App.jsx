@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="relative  min-h-screen">
-        <div className="absolute inset-0 -z-30 bg-indigo-50"></div>
+        <div className="absolute inset-0 -z-30 bg-white"></div>
         <Routes>
           <Route
             path="/"
