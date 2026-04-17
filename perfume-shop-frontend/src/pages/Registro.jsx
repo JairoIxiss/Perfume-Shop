@@ -38,8 +38,8 @@ const Register = () => {
 
   return (
 
-    <div className="min-h-screen -z-10 flex items-center justify-center bg-orange-100 py-12 px-4">
-      <div className="absolute inset-0 z-0 overflow-hidden">
+    <div className="min-h-screen -z-10 flex flex-col items-center justify-center bg-orange-100 py-12 px-4">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="
         absolute
         top-[-200px]
@@ -75,7 +75,7 @@ const Register = () => {
         blur-[140px]
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
-      <div className="
+        <div className="
         absolute
         bottom-[-200px]
         left-[70%]
@@ -87,6 +87,11 @@ const Register = () => {
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 
+      </div>
+      <div className="titulo border-red-600 flex">
+        <Link to="/">
+          <h2 className="mb-7 py-4 leading-relaxed font-pacifico text-7xl px-5 bg-gradient-to-r from-indigo-500  to-amber-500 bg-[length:150%_100%] bg-clip-text text-transparent cursor-pointer">Perfume Shop</h2>
+        </Link>
       </div>
       <div className="max-w-md z-10 w-full bg-white/50 rounded-lg shadow-md p-8">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">

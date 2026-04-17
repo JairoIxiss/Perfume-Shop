@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 
 const PerfumeCard = ({ perfume }) => {
     return (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <div className="bg-slate-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
 
-            <div className="h-64 bg-gray-200 overflow-hidden">
+            <div className="p-3 h-64 bg-gray-200 overflow-hidden flex items-center justify-center">
                 <img
-                    src={perfume.imagenUrl || 'null'}
+                    src={`/perfumes/${perfume.idPerfume}.png`}
                     alt={perfume.nombrePerfume}
-                    className="w-full h-full object-cover"
+                    className="max-h-full max-w-full object-contain"
                 />
             </div>
 

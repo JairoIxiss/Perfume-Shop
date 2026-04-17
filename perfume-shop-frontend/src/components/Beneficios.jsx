@@ -2,7 +2,7 @@ import { IconRotate, IconTruckDelivery, IconMessageChatbot } from "@tabler/icons
 
 const Beneficios = () => {
   return (
-<section className="w-full  border-red-500">
+<section className="my-15 w-full  border-red-500">
     <div className="grid grid-cols-3 gap-10 px-10 text-center font-nunito text-mauve-900">
         <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
             <IconTruckDelivery size={50}/>

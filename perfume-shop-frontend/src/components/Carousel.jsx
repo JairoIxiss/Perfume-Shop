@@ -17,13 +17,13 @@ const Carousel = () => {
         <DulcesCard />
     ];
 
-   //* useEffect(() => {
-        //const interval = setInterval(() => {
-       //     setIndex((prev) => (prev + 1) % slides.length);
-       // }, );
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % slides.length);
+        },5000);
 
-       // return () => clearInterval(interval);
-   // }, []);
+        return () => clearInterval(interval);
+    }, []);
 
     const next = () => {
         setIndex((prev) => (prev + 1) % slides.length);
@@ -47,7 +47,7 @@ const Carousel = () => {
                 ))}
             </div>
 
-            <div className="absolute bottom-4 left-4 flex items-center gap-4">
+            <div className="relative bottom-4 left-4 flex items-center gap-4">
 
                 <div className="flex gap-2">
                     <button
@@ -70,11 +70,10 @@ const Carousel = () => {
                         <div
                             key={i}
                             onClick={() => setIndex(i)}
-                            className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-                                index === i
+                            className={`w-3 h-3 rounded-full cursor-pointer transition-all ${index === i
                                     ? "bg-amber-900 scale-125"
                                     : "bg-amber-900/40"
-                            }`}
+                                }`}
                         />
                     ))}
                 </div>

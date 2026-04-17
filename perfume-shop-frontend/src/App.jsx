@@ -10,6 +10,7 @@ import TopSellers from './components/TopSellers';
 import Lanzamientos from './components/Lanzamientos';
 import Beneficios from './components/Beneficios';
 import Footer from './components/Footer';
+import Suscripcion from './components/suscripcion';
 import './index.css'
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
                 <Carousel />
                 <TopSellers/>
                 <Lanzamientos />
-                <AboutUs />
+                <Suscripcion />
                 <Beneficios />
                 <Footer/>
               </>
