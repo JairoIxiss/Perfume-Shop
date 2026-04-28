@@ -14,6 +14,7 @@ const Colors = () => {
         opacity-30
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_18s_ease-in-out_infinite]
       " />
 
@@ -27,6 +28,7 @@ const Colors = () => {
         opacity-50
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_20s_ease-in-out_infinite]
       " />
 
@@ -40,6 +42,7 @@ const Colors = () => {
         opacity-30
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 
@@ -53,6 +56,7 @@ const Colors = () => {
         opacity-30
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 
@@ -66,6 +70,7 @@ const Colors = () => {
         opacity-30
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 
@@ -79,6 +84,7 @@ const Colors = () => {
         opacity-50
         rounded-full
         blur-[140px]
+        mix-blend-screen
         animate-[floatSlow_22s_ease-in-out_infinite]
       " />
 

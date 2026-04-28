@@ -2,25 +2,35 @@ import { IconRotate, IconTruckDelivery, IconMessageChatbot } from "@tabler/icons
 
 const Beneficios = () => {
   return (
-<section className="my-15 w-full  border-red-500">
-    <div className="grid grid-cols-3 gap-10 px-10 text-center font-nunito text-mauve-900">
-        <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
-            <IconTruckDelivery size={50}/>
-            <h3 className="text-2xl">Envíos Gratis</h3>
-            <p className="text-mauve-600">Envío gratis dentro de todo México </p>
+    <section className="my-8 md:my-12 lg:my-15 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 px-4 md:px-10 text-center font-nunito text-mauve-900">
+            
+            <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
+                <IconTruckDelivery size={40} className="md:size-[50]" />
+                <h3 className="text-xl md:text-2xl">Envíos Gratis</h3>
+                <p className="text-mauve-600 text-sm md:text-base">
+                    Envío gratis dentro de todo México
+                </p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
+                <IconRotate size={40} className="md:size-[50]" />
+                <h3 className="text-xl md:text-2xl">Devoluciones</h3>
+                <p className="text-mauve-600 text-sm md:text-base">
+                    Devoluciones gratuitas dentro de los 5 días posteriores a la compra
+                </p>
+            </div>
+            
+            <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
+                <IconMessageChatbot size={40} className="md:size-[50]" />
+                <h3 className="text-xl md:text-2xl">Atención a Clientes</h3>
+                <p className="text-mauve-600 text-sm md:text-base">
+                    Atención personalizada para resolver tus dudas y preocupaciones
+                </p>
+            </div>
+            
         </div>
-        <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
-            <IconRotate size={50}/>
-            <h3 className="text-2xl">Devoluciones</h3>
-            <p className="text-mauve-600">Devoluciones gratuitas dentro de los 5 días posteriores a la compra</p>
-        </div>
-        <div className="flex flex-col items-center gap-3 max-w-xs mx-auto">
-            <IconMessageChatbot size={50}/>
-            <h3 className="text-2xl">Atención a Clientes</h3>
-            <p className="text-mauve-600">Atención personalizada para resolver tus dudas y preocupaciones</p>
-        </div>
-    </div>
-</section>
+    </section>
   );
 };
 
