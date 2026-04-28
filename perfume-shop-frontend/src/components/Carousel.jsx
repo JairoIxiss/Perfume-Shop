@@ -34,7 +34,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-11/12 mx-auto overflow-hidden rounded-2xl shadow-lg bg-amber-100 mt-15 mb-15">
+        <div className="relative w-11/12 mx-auto overflow-hidden rounded-2xl shadow-lg bg-amber-100 mt-8 md:mt-15 mb-8 md:mb-15">
 
             <div
                 className="flex transition-transform duration-700 ease-in-out"
