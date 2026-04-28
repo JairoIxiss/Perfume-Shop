@@ -6,6 +6,7 @@
 @theme {
   --font-pacifico: 'Pacifico', cursive;
   --font-nunito: 'Nunito', sans-serif;
+  --animate-slide-down: slideDown 0.3s ease-out;
 }
 
 @keyframes floatSlow {
@@ -17,5 +18,16 @@
   }
   100% {
     transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

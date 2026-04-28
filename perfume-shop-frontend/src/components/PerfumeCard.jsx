@@ -13,7 +13,7 @@ const PerfumeCard = ({ perfume }) => {
             </div>
 
             <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 h-14 overflow-hidden">
                     {perfume.nombrePerfume}
                 </h3>
                 <p className="text-gray-600 text-sm mb-2">

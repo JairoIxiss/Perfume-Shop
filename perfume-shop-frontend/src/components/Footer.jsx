@@ -8,7 +8,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-start gap-3">
           <a 
-            href="https://github.com/"
+            href="https://github.com/JairoIxiss"
             className="flex items-center gap-2 text-gray-600 hover:text-black transition"
           >
             <IconBrandGithub size={22}/>
@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Redes derecha */}
         <div className="flex flex-col items-end gap-3">
           <a 
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/jairo-ixis/"
             className="flex items-center gap-2 text-gray-600 hover:text-black transition"
           >
             <IconBrandLinkedin size={22}/>
