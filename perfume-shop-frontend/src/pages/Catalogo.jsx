@@ -100,9 +100,9 @@ const Catalog = () => {
       <div className="flex justify-center flex-wrap gap-2 md:space-x-4 mb-6 md:mb-8 px-4">
         <button
           onClick={() => handleFilterGenero('TODOS')}
-          className={`px-4 md:px-6 py-2 rounded text-sm md:text-base transition-colors ${
+          className={`px-4 md:px-6 py-2 rounded-3xl border-amber-950 border-3 text-sm md:text-base transition-colors ${
             filtroGenero === 'TODOS'
-              ? 'bg-blue-600 text-white'
+              ? 'bg-gray-200 text-amber-950'
               : 'bg-gray-400 text-white hover:bg-gray-500'
           }`}
         >
@@ -110,9 +110,9 @@ const Catalog = () => {
         </button>
         <button
           onClick={() => handleFilterGenero('MASCULINO')}
-          className={`px-4 md:px-6 py-2 rounded text-sm md:text-base transition-colors ${
+          className={`px-4 md:px-6 py-2 rounded-3xl border-amber-950 border-3 text-sm md:text-base transition-colors ${
             filtroGenero === 'MASCULINO'
-              ? 'bg-blue-600 text-white'
+              ? 'bg-gray-200 text-amber-950'
               : 'bg-gray-400 text-white hover:bg-gray-500'
           }`}
         >
@@ -120,9 +120,9 @@ const Catalog = () => {
         </button>
         <button
           onClick={() => handleFilterGenero('FEMENINO')}
-          className={`px-4 md:px-6 py-2 rounded text-sm md:text-base transition-colors ${
+          className={`px-4 md:px-6 py-2 rounded-3xl border-amber-950 border-3 text-sm md:text-base transition-colors ${
             filtroGenero === 'FEMENINO'
-              ? 'bg-blue-600 text-white'
+              ? 'bg-gray-200 text-amber-950'
               : 'bg-gray-400 text-white hover:bg-gray-500'
           }`}
         >
@@ -130,9 +130,9 @@ const Catalog = () => {
         </button>
         <button
           onClick={() => handleFilterGenero('UNISEX')}
-          className={`px-4 md:px-6 py-2 rounded text-sm md:text-base transition-colors ${
+          className={`px-4 md:px-6 py-2 rounded-3xl border-amber-950 border-3 text-sm md:text-base transition-colors ${
             filtroGenero === 'UNISEX'
-              ? 'bg-blue-600 text-white'
+              ? 'bg-gray-200 text-amber-950'
               : 'bg-gray-400 text-white hover:bg-gray-500'
           }`}
         >

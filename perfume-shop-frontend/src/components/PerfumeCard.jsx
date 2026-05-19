@@ -29,12 +29,12 @@ const PerfumeCard = ({ perfume }) => {
                     <span className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900">
                         ${perfume.precio}
                     </span>
-                    <Link
+                    {/* <Link
                         to={`/perfume/${perfume.idPerfume}`}
                         className="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-4 py-1.5 md:py-2 rounded text-xs md:text-sm transition-colors"
                     >
                         Ver Detalle
-                    </Link>
+                    </Link> */}
                 </div>
 
                 {perfume.stock <= 5 && perfume.stock > 0 && (
